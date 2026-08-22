@@ -1,0 +1,240 @@
+/* --------------------------------------------------
+   GLOBAL STYLES
+-------------------------------------------------- */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+   HEADER (Index Page)
+-------------------------------------------------- */
+.site-header {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* --------------------------------------------------
+   COUNTRY GRID (Index Page)
+-------------------------------------------------- */
+.country-section {
+    padding: 40px 20px;
+}
+
+.country-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.country-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.country-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.country-card span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* --------------------------------------------------
+   BACK BUTTON (Country Pages)
+-------------------------------------------------- */
+.back-container {
+    text-align: left;
+    padding: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* --------------------------------------------------
+   COUNTRY TITLE HEADER (Neutral)
+-------------------------------------------------- */
+.country-header {
+    background: #f2f2f2;
+    color: #333;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 0 auto 30px auto;
+    max-width: 900px;
+}
+
+/* --------------------------------------------------
+   COUNTRY PAGE LAYOUT
+-------------------------------------------------- */
+.country-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* --------------------------------------------------
+   TRIP DETAILS BOX
+-------------------------------------------------- */
+.trip-box {
+    background: #ffffff;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.trip-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.trip-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* --------------------------------------------------
+   TRIP LINKS
+-------------------------------------------------- */
+.trip-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* --------------------------------------------------
+   ALBUM / TRIP BUTTONS
+-------------------------------------------------- */
+.album-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.album-button:hover {
+    background-color: #005a9e;
+}
+
+.trip-links-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.album-button-small {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+}
+
+.album-button-small:hover {
+    background-color: #005a9e;
+}
+
+/* --------------------------------------------------
+   WORLD MAP (Optional)
+-------------------------------------------------- */
+.worldmap-container {
+    position: relative;
+    background: url('assets/images/world-map-soft.png') center/contain no-repeat;
+    padding: 40px 20px;
+    min-height: 400px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.map-hotspots {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.map-hotspot {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+
+.map-hotspot.europe   { top: 25%; left: 50%; width: 10%; height: 10%; }
+.map-hotspot.asia     { top: 25%; left: 65%; width: 12%; height: 12%; }
+.map-hotspot.africa   { top: 45%; left: 50%; width: 10%; height: 12%; }
+.map-hotspot.americas { top: 35%; left: 25%; width: 12%; height: 18%; }
+.map-hotspot.oceania  { top: 60%; left: 75%; width: 10%; height: 10%; }
+
+.map-hotspot:hover {
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
