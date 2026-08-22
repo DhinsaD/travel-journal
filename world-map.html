@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map — Dean’s Travel Journal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .worldmap-header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .worldmap-header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+        }
+
+        .worldmap-container {
+            background: url('assets/images/world-map.png') center/cover no-repeat fixed;
+            padding: 40px 20px;
+            min-height: 400px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .country-card {
+            background: rgba(255,255,255,0.85);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .country-card:hover {
+            background: rgba(255,255,255,1);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="worldmap-container">
+    <div class="map-hotspots">
+        <a href="#europe" class="map-hotspot europe"></a>
+        <a href="#asia" class="map-hotspot asia"></a>
+        <a href="#africa" class="map-hotspot africa"></a>
+        <a href="#americas" class="map-hotspot americas"></a>
+        <a href="#oceania" class="map-hotspot oceania"></a>
+    </div>
+</div>
+
+    <div class="back-container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+
+    <header class="worldmap-header">
+        <h1>World Map</h1>
+        <p>Explore every country we've visited together</p>
+    </header>
+
+    <div class="worldmap-container"></div>
+
+    <main class="country-main">
+
+        <section class="country-grid">
+
+            <a class="country-card" href="countries/australia.html">Australia</a>
+            <a class="country-card" href="countries/belgium.html">Belgium</a>
+            <a class="country-card" href="countries/cambodia.html">Cambodia</a>
+            <a class="country-card" href="countries/canada.html">Canada</a>
+            <a class="country-card" href="countries/china.html">China</a>
+            <a class="country-card" href="countries/egypt.html">Egypt</a>
+            <a class="country-card" href="countries/france.html">France</a>
+            <a class="country-card" href="countries/germany.html">Germany</a>
+            <a class="country-card" href="countries/gibraltar.html">Gibraltar</a>
+            <a class="country-card" href="countries/hongkong.html">Hong Kong</a>
+            <a class="country-card" href="countries/hungary.html">Hungary</a>
+            <a class="country-card" href="countries/india.html">India</a>
+            <a class="country-card" href="countries/indonesia.html">Indonesia</a>
+            <a class="country-card" href="countries/japan.html">Japan</a>
+            <a class="country-card" href="countries/macau.html">Macau</a>
+            <a class="country-card" href="countries/malaysia.html">Malaysia</a>
+            <a class="country-card" href="countries/mexico.html">Mexico</a>
+            <a class="country-card" href="countries/monaco.html">Monaco</a>
+            <a class="country-card" href="countries/morocco.html">Morocco</a>
+            <a class="country-card" href="countries/myanmar.html">Myanmar</a>
+            <a class="country-card" href="countries/netherlands.html">Netherlands</a>
+            <a class="country-card" href="countries/northkorea.html">North Korea</a>
+            <a class="country-card" href="countries/philippines.html">Philippines</a>
+            <a class="country-card" href="countries/portugal.html">Portugal</a>
+            <a class="country-card" href="countries/singapore.html">Singapore</a>
+            <a class="country-card" href="countries/southafrica.html">South Africa</a>
+            <a class="country-card" href="countries/southkorea.html">South Korea</a>
+            <a class="country-card" href="countries/spain.html">Spain</a>
+            <a class="country-card" href="countries/switzerland.html">Switzerland</a>
+            <a class="country-card" href="countries/srilanka.html">Sri Lanka</a>
+            <a class="country-card" href="countries/thailand.html">Thailand</a>
+            <a class="country-card" href="countries/uae.html">United Arab Emirates</a>
+            <a class="country-card" href="countries/unitedkingdom.html">United Kingdom</a>
+            <a class="country-card" href="countries/unitedstates.html">United States</a>
+            <a class="country-card" href="countries/vietnam.html">Vietnam</a>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© Dean’s Travel Journal — Built with love and memories</p>
+    </footer>
+
+</body>
+</html>
